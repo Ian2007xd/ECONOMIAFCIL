@@ -1,0 +1,493 @@
+/*EXTRAS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*EXTRAS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    ---color-gris: #18191A;
+    --color-body: #fff;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-purple: #C779FF;
+    --color-text: #000;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--color-body);
+    font-family: "PT sans", sans-serif;
+    background-size: cover;
+    background-position: center;
+    transition: .5s ease;
+    /*background: linear-gradient(#0df8f9, #000);*/
+}
+body.dark {
+    ---color-gris: #18191A;
+    --color-body: #1E1E1E;
+    --color-white: #E0E0E0;
+    --color-black: #121212;
+    --color-purple: #C779FF;
+    --color-text: #E0E0E0;
+    transition: .5s ease;
+}
+
+/*MENU*/
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background-color: var(--color-black);
+    z-index: 100;
+    transition: .5s ease;
+}
+.nav.activeMenu {
+    background-color: var(--color-black);
+    padding: 1px;
+    z-index: 100;
+    transition: .5s ease;
+}
+.nav.activeMenu .logo,
+.nav.activeMenu a {
+    color: var(--color-white);
+    transition: .5s ease;
+}
+.nav.activeMenu a:hover {
+    color: var(--color-purple);
+    transition: .5s ease;
+}
+.scrol {
+    height: auto;
+}
+.nav .nav-bar {
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+    background-color: var(--color-black);
+    backdrop-filter: blur(20px);
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s ease;
+}
+.nav .nav-bar .slideropen {
+    color: var(--color-white);
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+    transition: .5s ease;
+}
+.nav .nav-bar .logo a {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: .5s ease;
+}
+.menu .logo-toggle {
+    display: none;
+}
+.nav-bar .nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-bar .nav-links li {
+    margin: 0 5px;
+    list-style: none;
+}
+.nav-links li a {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 10px;
+    transition: .5s ease;
+}
+.nav-links li a:hover {
+    color: var(--color-purple);
+    transition: .5s ease;
+}
+.nav-links li a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: var(--color-purple);
+    opacity: 0;
+    transition: .5s ease;
+}
+.nav-links li:hover a::before {
+    opacity: 1;
+}
+.nav-bar .darklight-searchBox {
+    display: flex;
+    align-items: center;
+}
+.darklight-searchBox .darlight,
+.darklight-searchBox .searchToggle {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+.darlight i,
+.searchToggle i {
+    position: absolute;
+    color: var(--color-white);
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transition: .5s ease;
+}
+.darlight i.sun {
+    opacity: 0;
+    pointer-events: none;
+}
+.darlight.activeLight i.sun {
+    opacity: 1;
+    pointer-events: auto;
+}
+.darlight.activeLight i.moon {
+    opacity: 0;
+    pointer-events: none;
+}
+.searchToggle i.cancel {
+    opacity: 0;
+    pointer-events: none;
+}
+.searchToggle.activeBar i.cancel {
+    opacity: 1;
+    pointer-events: auto;
+}
+.searchToggle.activeBar i.search {
+    opacity: 0;
+    pointer-events: none;
+}
+body.dark .bar-menu input {
+    color: var(--color-text);
+}
+.bar-menu i {
+    position: absolute;
+    color: var(--color-white);
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+body.dark .bar-menu i {
+    color: var(--color-text);
+}
+/*BOTONES DE INICIO*/
+.btn-users a .btn-registrar,
+.btn-users a .btn-iniciarS {
+    color: var(--color-white);
+    cursor: pointer;
+    text-decoration: none;
+    transition: .5 ease;
+}
+.btn-users a .btn-registrar:hover,
+.btn-users a .btn-iniciarS:hover {
+    scale: 1.1;
+}
+.btn-users .btn-registrar,
+.btn-users .btn-iniciarS {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    margin: 0 10px 0;
+    transition: .5s ease;
+}
+.btn-users .btn-registrar:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.btn-users .btn-iniciarS:after {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+/*color*/
+.btn-users .btn-registrar::before,
+.btn-users .btn-iniciarS::before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #410070, 
+        #540091, 
+        #9810FF,
+        #C779FF,
+        #DBA9FF,
+        #C779FF,
+        #9810FF,
+        #540091, 
+        #410070
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .5s ease;
+    border-radius: 10px;
+    opacity: 1;
+}
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+/*MENU AJUSTABLE*/
+@media (max-width: 768px) {
+    .nav .nav-bar .slideropen {
+        display: block;
+        z-index: 100;
+    }
+    .menu {
+        position: fixed;
+        height: 100%;
+        width: 250px;
+        left: -100%;
+        top: 0;
+        padding: 20px;
+        background-color: var(--color-black);
+        z-index: 100;
+        transition: all 0.5s ease;
+    }
+    .nav.active .menu {
+        left: -0%;
+    }
+    .nav.active .nav-bar .navLogo a {
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+    .menu .logo-toggle {
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo-toggle .sliderclose {
+        color: var(--color-white);
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .nav-bar .nav-links {
+        flex-direction: column;
+        padding-top: 30px;
+        opacity: 0;
+    }
+    .nav-links li a {
+        display: block;
+        margin-top: 20px;
+    }
+    /*BOTONES DE INICIO*/
+    .btn-users .btn-registrar,
+    .btn-users .btn-iniciarS {
+    width: 80px;
+    height: 25px;
+    font-size: 8px;
+    padding: 5px 5px;
+    border: none;
+    outline: none;
+    color: var(--color-white);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    margin: 0 10px 0;
+    transition: .5s ease;
+}
+}
+/*INFORMACION*/
+/* Encabezado */
+.info {
+    position: relative;
+    margin: 70px auto 0; 
+    color: var(--color-text);
+    text-align: center;
+    transition: .5s ease;
+}
+.info img {
+    border-radius: 50%;
+    border: 2px solid var(--color-text);
+    width: 128px;
+    height: 128px;
+    transition: .5s ease;
+    object-fit: cover;
+}
+.temas h2 {
+    margin: 20px;
+    text-align: center;
+    color: var(--color-text);
+    transition: .5s ease;
+}
+
+/* Estilos para las tarjetas de temas */
+.temas .tema {
+    background-color: var(--color-body);
+    margin-bottom: 20px;
+    border: 2px solid var(--color-text);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 32px;
+    transition: .5s ease;
+}
+.temas .tema h3 {
+    color: var(--color-text);
+    transition: .5s ease;
+}
+.temas .tema p {
+    color: var(--color-text);
+    transition: .5s ease;
+}
+.temas .tema img {
+    height: 96px;
+    width: 96px;
+    border: var(--color-text) solid 2px;
+    border-radius: 20px 50px 20px 50px;
+    object-fit: cover;
+}
+
+/* Botones */
+.temas .tema button {
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s ease;
+    text-align: center;
+}
+
+.temas .tema button:hover {
+    background-color: #540091;
+    transition: .5s ease;
+}
+
+/*
+PIE DE PAGINA
+*/
+.pie-pagina {
+    margin: 0 auto 0;
+    width: 100%;
+    background-color: var(--color-black);
+    transition: .5s ease;
+}
+.pie-pagina .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+.pie-pagina .grupo1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo1 .box figure img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--color-white);
+    border-radius: 50%;
+    transition: .5s ease;
+}
+.pie-pagina .grupo1 .box h2 {
+    color: var(--color-white);
+    margin-bottom: 25px;
+    font-size: 20px;
+    transition: .5s ease;
+}
+.pie-pagina .grupo1 .box p {
+    color: var(--color-white);
+    margin-bottom: 10px;
+    transition: .5s ease;
+}
+.pie-pagina .grupo1 .box .red-social a {
+    text-decoration: none;
+}
+.pie-pagina .grupo1 .box .red-social i {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: var(--color-black);
+    margin-right: 10px;
+    background-color: var(--color-white);
+    text-align: center;
+    transition: .5s ease;
+}
+.pie-pagina .grupo1 .box .red-social i:hover {
+    background-color: var(--color-purple);
+    transition: .5s ease;
+}
+.pie-pagina .grupo-2 {
+    background-color: var(--color-black);
+    padding: 15px 10px;
+    text-align: center;
+    color: var(--color-white);
+    transition: .5s ease;
+}
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+    transition: .5s ease;
+}
+/*
+PIE DE PAGINA AJUSTABLE
+*/
+@media screen and (max-width: 768px) {
+    .pie-pagina .grupo1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        padding: 35px 0;
+        transition: .5s ease;
+    }
+}

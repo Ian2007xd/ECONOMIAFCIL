@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inicio.css">
+    <title>EDUCACION FINANCIERA</title>
+</head>
+<body>
+    <!--MENU-->
+    <nav class="nav">
+        <div class="nav-bar">
+        <!--<i class="fa-solid fa-bars slideropen"></i>-->
+            <span class="logo">
+                <a href="#">
+                    EconomíaFácil
+                </a>
+            </span>
+        <div class="menu">
+            <div class="logo-toggle">
+            <span class="logo navLogo">
+                <a href="#">
+                    EconomíaFácil
+                </a>
+            </span>
+            <i class="fa-solid fa-x sliderclose"></i>
+            </div>
+
+            <!--EXTRAS DEL MENU-->
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#temas">Temas</a></li>
+                <li><a href="#mas">Mas</a></li>
+            
+            </ul>
+            </div>
+        
+            <div class="darklight-searchBox">
+                <div class="darlight">
+                    <i class="fa-solid fa-moon sun"></i>
+                    <i class="fa-solid fa-sun moon"></i>
+                </div>
+            
+                <!--
+                <div class="searchBox">
+                    <div class="searchToggle">
+                    <i class="fa-solid fa-x cancel"></i>
+                    <i class="fa-solid fa-magnifying-glass search"></i>
+                    </div>
+
+                    <div class="bar-menu">
+                        <input type="text" placeholder="Buscar...">
+                        <i class="fa-brands fa-searchengin"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="perfil">
+                <div class="file" onclick="perfilToggle();">
+                    <img src="Img/Anal.jpeg">
+                </div>
+                <div class="options">
+                    <h3>
+                        SUS
+                        <br>
+                        <span>
+                            izazagaariel@gmail.com
+                        </span>
+                    </h3>
+                    <ul>
+                        <li><i class="fa-solid fa-user"></i><a href="principal.php">MI PERFIL</a></li>
+                        <li><i class="fa-solid fa-pen-to-square"></i><a href="#">EDITAR PERFIL</a></li>
+                        <li><i class="fa-solid fa-inbox"></i><a href="#">BANDEJA DE ENTREGA</a></li>
+                        <li><i class="fa-solid fa-gear"></i><a href="#">AJUSTES</a></li>
+                        <li><i class="fa-solid fa-question"></i><a href="#">AYUDA</a></li>
+                        <li><i class="fa-solid fa-shuffle"></i></i><a href="#">CAMBIAR CUENTA</a></li>
+                        <li><i class="fa-solid fa-circle-xmark"></i><a href="php/cerrarS.php">CERRAR SESION</a></li>
+                    </ul>
+                    -->
+
+                    <div class="btn-users">
+                        <a href="index.html">
+                            <button class="btn-registrar">
+                                PRINCIPAL
+                            </button>
+                        </a>
+                        <a href="sabermas.html">
+                            <button class="btn-iniciarS">
+                                SABER MAS
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--INFORMACION PRINCIPAL-->
+    <section id="inicio" class="info">
+        <h2>ECONOMIA FINANCIARA</h2>
+        <a href="https://es.wikipedia.org/wiki/Finanzas">
+        <img src="Img/eco_refenreia.jpg" alt="Imagen temática">
+        </a>
+        <h3>
+            ¿Qué es la Economía Financiera?
+        </h3>
+        <p>La economía financiera es el estudio de cómo individuos, empresas y gobiernos gestionan sus 
+            recursos monetarios. Se enfoca en la toma de decisiones sobre inversiones, ahorro y gasto, así como en 
+            el funcionamiento de los mercados financieros.</p>
+    </section><hr>
+
+    <section id="temas" class="temas">
+        <h2>Temas Principales</h2>
+
+        <!-- Tema 1 -->
+        <div class="tema">
+            <h3>Presupuestación</h3>
+            <img src="Img/clave.jpeg" alt="Imagen de presupuesto">
+                <p>
+                    La presupuestación es el proceso de planificar y controlar cómo se gasta el dinero. Es 
+                    fundamental porque ayuda a las personas a conocer sus ingresos, gastos y a gestionar mejor 
+                    sus finanzas. Al hacer un presupuesto, se puede tomar decisiones más informadas sobre en qué 
+                    gastar o ahorrar, y evitar el sobreendeudamiento.
+                </p>
+            <button onclick="leerMas('presupuestos')">Leer más</button>
+        </div>
+
+        <!-- Tema 2 -->
+        <div class="tema">
+            <h3>Ahorro</h3>
+            <img src="Img/ahorroinicio.jpeg" alt="Imagen de ahorro">
+            <p>
+                El ahorro consiste en separar una parte de los ingresos para objetivos futuros o emergencias. Es 
+                clave para generar una reserva financiera que cubra imprevistos o para alcanzar metas a largo 
+                plazo, como la compra de una casa o la jubilación. El ahorro no solo brinda seguridad financiera, 
+                sino que también evita la dependencia del crédito en situaciones difíciles.
+            </p>
+            <button onclick="leerMas('ahorro')">Leer más</button>
+        </div>
+
+        <!-- Tema 3 -->
+        <div class="tema">
+            <h3>Inversión</h3>
+            <img src="Img/inversion.jpg" alt="Imagen de inversión">
+            <p>
+                La inversión implica destinar dinero en activos como acciones, bonos o bienes raíces para hacerlo 
+                crecer con el tiempo. Es una herramienta poderosa para construir riqueza a largo plazo. A través de 
+                la inversión, el dinero puede generar rendimientos que superen la inflación, creando oportunidades 
+                para mejorar la estabilidad financiera y lograr objetivos como la jubilación anticipada o la 
+                educación de los hijos.
+            </p>
+            <button onclick="leerMas('inversion')">Leer más</button>
+        </div>
+    </section>
+
+    <!--PIE DE PAGINA-->
+    <footer class="pie-pagina" id="mas">
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="Img/logoEdu.webp" alt="ECONOMIA FACIL">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>
+                    SOBRE NOSOTROS:
+                </h2>
+                <p>
+                    "Una página de educación financiera enseña a gestionar el dinero mediante consejos sobre ahorro, 
+                    inversión y presupuestos para alcanzar la estabilidad económica."
+                </p>
+            </div>
+            <div class="box">
+                <h2>
+                    SIGUENOS EN:
+                </h2>
+                <div class="red-social">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>EconomíaFácil</b> Todos los derechos recervados</small>
+        </div>
+    </footer>
+    
+    <script src="js/BarMenu.js"></script>
+    <script src="js/informacion.js"></script>
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+</body>
+</html>
