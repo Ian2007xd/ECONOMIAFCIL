@@ -37,7 +37,73 @@ body.dark {
     --color-text: #E0E0E0;
     transition: .5s ease;
 }
+/* Contenedor fijo del cuadro y botón */
+.fixed-container {
+    position: fixed;
+    bottom: 20px;
+    right: 1075px;
+    text-align: center;
+    z-index: 100;
+}
 
+/* Cuadro de texto sobre el botón */
+.fixed-text-box {
+    background-color: var(--color-white); /* Fondo gris claro */
+    border: 1px solid var(--color-purple);
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-text-box p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Botón fijo como enlace */
+.fixed-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-purple); /* Azul */
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.fixed-button:hover {
+    background-color: #9810FF; /* Azul oscuro */
+    transform: scale(1.1);
+}
+
+.fixed-button:active {
+    transform: scale(0.95);
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .fixed-container {
+        right: 300px;
+    }
+    .fixed-button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .fixed-text-box p {
+        font-size: 12px;
+    }
+}
 /*MENU*/
 .nav {
     position: fixed;
