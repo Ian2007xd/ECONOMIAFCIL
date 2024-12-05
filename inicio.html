@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/inicio.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <title>EDUCACION FINANCIERA</title>
 </head>
 <body>
@@ -25,14 +26,6 @@
             </span>
             <i class="fa-solid fa-x sliderclose"></i>
             </div>
-
-            <!--EXTRAS DEL MENU-->
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#temas">Temas</a></li>
-                <li><a href="#mas">Mas</a></li>
-            
-            </ul>
             </div>
         
             <div class="darklight-searchBox">
@@ -40,43 +33,6 @@
                     <i class="fa-solid fa-moon sun"></i>
                     <i class="fa-solid fa-sun moon"></i>
                 </div>
-            
-                <!--
-                <div class="searchBox">
-                    <div class="searchToggle">
-                    <i class="fa-solid fa-x cancel"></i>
-                    <i class="fa-solid fa-magnifying-glass search"></i>
-                    </div>
-
-                    <div class="bar-menu">
-                        <input type="text" placeholder="Buscar...">
-                        <i class="fa-brands fa-searchengin"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="perfil">
-                <div class="file" onclick="perfilToggle();">
-                    <img src="Img/Anal.jpeg">
-                </div>
-                <div class="options">
-                    <h3>
-                        SUS
-                        <br>
-                        <span>
-                            izazagaariel@gmail.com
-                        </span>
-                    </h3>
-                    <ul>
-                        <li><i class="fa-solid fa-user"></i><a href="principal.php">MI PERFIL</a></li>
-                        <li><i class="fa-solid fa-pen-to-square"></i><a href="#">EDITAR PERFIL</a></li>
-                        <li><i class="fa-solid fa-inbox"></i><a href="#">BANDEJA DE ENTREGA</a></li>
-                        <li><i class="fa-solid fa-gear"></i><a href="#">AJUSTES</a></li>
-                        <li><i class="fa-solid fa-question"></i><a href="#">AYUDA</a></li>
-                        <li><i class="fa-solid fa-shuffle"></i></i><a href="#">CAMBIAR CUENTA</a></li>
-                        <li><i class="fa-solid fa-circle-xmark"></i><a href="php/cerrarS.php">CERRAR SESION</a></li>
-                    </ul>
-                    -->
 
                     <div class="btn-users">
                         <a href="index.html">
@@ -84,9 +40,14 @@
                                 PRINCIPAL
                             </button>
                         </a>
+                        <a href="servicios.html">
+                            <button class="btn-registrar">
+                                RESUMEN
+                            </button>
+                        </a>
                         <a href="sabermas.html">
                             <button class="btn-iniciarS">
-                                SABER MAS
+                                SUB-TEMAS
                             </button>
                         </a>
                     </div>
@@ -123,7 +84,11 @@
                     sus finanzas. Al hacer un presupuesto, se puede tomar decisiones más informadas sobre en qué 
                     gastar o ahorrar, y evitar el sobreendeudamiento.
                 </p>
-            <button onclick="leerMas('presupuestos')">Leer más</button>
+                <a href="https://es.wikipedia.org/wiki/Presupuesto">
+                    <button>
+                        Leer mas
+                    </button>
+            </a>
         </div>
 
         <!-- Tema 2 -->
@@ -136,7 +101,11 @@
                 plazo, como la compra de una casa o la jubilación. El ahorro no solo brinda seguridad financiera, 
                 sino que también evita la dependencia del crédito en situaciones difíciles.
             </p>
-            <button onclick="leerMas('ahorro')">Leer más</button>
+                <a href="https://es.wikipedia.org/wiki/Ahorro">
+                    <button>
+                        Leer mas
+                    </button>
+                </a>
         </div>
 
         <!-- Tema 3 -->
@@ -150,7 +119,11 @@
                 para mejorar la estabilidad financiera y lograr objetivos como la jubilación anticipada o la 
                 educación de los hijos.
             </p>
-            <button onclick="leerMas('inversion')">Leer más</button>
+                <a href="https://es.wikipedia.org/wiki/Inversion">
+                    <button>
+                        Leer mas
+                    </button>
+                </a>
         </div>
     </section>
 
@@ -173,25 +146,6 @@
                     inversión y presupuestos para alcanzar la estabilidad económica."
                 </p>
             </div>
-            <div class="box">
-                <h2>
-                    SIGUENOS EN:
-                </h2>
-                <div class="red-social">
-                    <a href="#">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                </div>
-            </div>
         </div>
         <div class="grupo-2">
             <small>&copy; 2024 <b>EconomíaFácil</b> Todos los derechos recervados</small>
@@ -199,7 +153,5 @@
     </footer>
     
     <script src="js/BarMenu.js"></script>
-    <script src="js/informacion.js"></script>
-    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
 </body>
 </html>

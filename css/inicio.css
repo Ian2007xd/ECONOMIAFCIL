@@ -390,7 +390,7 @@ body.dark .bar-menu i {
 }
 
 /* Botones */
-.temas .tema button {
+.temas .tema a button {
     background-color: var(--color-purple);
     color: var(--color-white);
     border: none;
@@ -400,7 +400,10 @@ body.dark .bar-menu i {
     transition: .5s ease;
     text-align: center;
 }
-
+.temas .tema a {
+    text-decoration: none;
+    color: var(--color-white);
+}
 .temas .tema button:hover {
     background-color: #540091;
     transition: .5s ease;
@@ -420,7 +423,7 @@ PIE DE PAGINA
     max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     padding: 45px 0;
 }

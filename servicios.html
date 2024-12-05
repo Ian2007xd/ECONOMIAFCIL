@@ -2,84 +2,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/NavBar.css">
     <link rel="stylesheet" href="css/servivios.css">
-    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <title>ECONOMIA FACIL</title>
 </head>
 <body>
-    <!--NAVBAR-->
+    <!--MENU-->
     <nav class="nav">
         <div class="nav-bar">
-        <i class="fa-solid fa-bars slideropen"></i>
+        <!--<i class="fa-solid fa-bars slideropen"></i>-->
             <span class="logo">
                 <a href="#">
-                    Zapateria CP
+                    EconomíaFácil
                 </a>
             </span>
         <div class="menu">
             <div class="logo-toggle">
             <span class="logo navLogo">
                 <a href="#">
-                    Zapateria CP
+                    EconomíaFácil
                 </a>
             </span>
             <i class="fa-solid fa-x sliderclose"></i>
             </div>
-            <ul class="nav-links">
-                <li><a href="informacion.php">Informacion</a></li>
-                <li><a href="index.php">Principal</a></li>
-                <li><a href="contactos.php">Contactos</a></li>
-                <li><a href="">
-                    <i class="fa-solid fa-heart"></i>
-                </a></li>
-                <li><a href="">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a></li>
-            </ul>
             </div>
+        
             <div class="darklight-searchBox">
                 <div class="darlight">
                     <i class="fa-solid fa-moon sun"></i>
                     <i class="fa-solid fa-sun moon"></i>
                 </div>
-                <div class="searchBox">
-                    <div class="searchToggle">
-                    <i class="fa-solid fa-x cancel"></i>
-                    <i class="fa-solid fa-magnifying-glass search"></i>
+
+                    <div class="btn-users">
+                        <a href="inicio.html">
+                            <button class="btn-registrar">
+                                INICIO
+                            </button>
+                        </a>
+                        <a href="index.html">
+                            <button class="btn-registrar">
+                                PRINCIPAL
+                            </button>
+                        </a>
+                        <a href="sabermas.html">
+                            <button class="btn-iniciarS">
+                                SUB-TEMAS
+                            </button>
+                        </a>
                     </div>
 
-                    <div class="bar-menu">
-                        <input type="text" placeholder="Buscar...">
-                        <i class="fa-brands fa-searchengin"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="perfil">
-                <div class="file" onclick="perfilToggle();">
-                    <img src="Img/Anal.jpeg">
-                </div>
-                <div class="options">
-                    <h3>
-                        SUS
-                        <br>
-                        <span>
-                            izazagaariel@gmail.com
-                        </span>
-                    </h3>
-                    <ul>
-                        <li><i class="fa-solid fa-user"></i><a href="principal.php">MI PERFIL</a></li>
-                        <li><i class="fa-solid fa-pen-to-square"></i><a href="#">EDITAR PERFIL</a></li>
-                        <li><i class="fa-solid fa-inbox"></i><a href="#">BANDEJA DE ENTREGA</a></li>
-                        <li><i class="fa-solid fa-gear"></i><a href="#">AJUSTES</a></li>
-                        <li><i class="fa-solid fa-question"></i><a href="#">AYUDA</a></li>
-                        <li><i class="fa-solid fa-shuffle"></i></i><a href="#">CAMBIAR CUENTA</a></li>
-                        <li><i class="fa-solid fa-circle-xmark"></i><a href="php/cerrarS.php">CERRAR SESION</a></li>
-                    </ul>
                 </div>
             </div>
         </div>
     </nav>
+
 
     <!--TEXT SERVICIOS-->
     <div class="text-catalogos">
@@ -372,7 +348,7 @@
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="Img/logo-black.jpeg" alt="ZAPATERIA CUATRO PATA">
+                        <img src="Img/logoEdu.webp" alt="ECONOMIA FACIL">
                     </a>
                 </figure>
             </div>
@@ -381,37 +357,15 @@
                     SOBRE NOSOTROS:
                 </h2>
                 <p>
-                    En ZapatosPC, ofrecemos calzado de calidad y estilo, con un compromiso inquebrantable con 
-                    nuestros clientes.
+                    "Una página de educación financiera enseña a gestionar el dinero mediante consejos sobre ahorro, 
+                    inversión y presupuestos para alcanzar la estabilidad económica."
                 </p>
-            </div>
-            <div class="box">
-                <h2>
-                    SIGUENOS EN:
-                </h2>
-                <div class="red-social">
-                    <a href="https://www.facebook.com/profile.php?id=61557542833391&mibextid=ZbWKwL">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/cuatropataa?igsh=YmFlNmMwajB3Y2lm">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@cuatro_pataa?_t=8lX4PSlV9wT&_r=1">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </a>
-                    <a href="https://whatsapp.com/channel/0029VaawN8r4SpkH4akgjG1C">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                </div>
             </div>
         </div>
         <div class="grupo-2">
             <small>&copy; 2024 <b>Zapateria CP</b> Todos los derechos recervados</small>
         </div>
     </footer>
-
-    <!--ICONOS-->
-    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
 
     <!--ACCIONES DE JS-->
     <script src="js/BarMenu.js"></script>

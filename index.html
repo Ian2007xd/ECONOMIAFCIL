@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EconomíaFácil</title>
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!--MENU-->
@@ -24,22 +25,6 @@
             </span>
             <i class="fa-solid fa-x sliderclose"></i>
             </div>
-
-            <!--EXTRAS DEL MENU
-            <ul class="nav-links">
-                <li><a href="informacion.php">Informacion</a></li>
-                <li><a href="servicios.php">Servicios</a></li>
-                <li><a href="contactos.php">Contactos</a></li>
-                <li><a href="">
-                    <i class="fa-solid fa-heart"></i>
-                </a></li>
-                <li><a href="">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a></li>
-            
-            </ul>
-            -->
-
             </div>
         
             <div class="darklight-searchBox">
@@ -47,43 +32,6 @@
                     <i class="fa-solid fa-moon sun"></i>
                     <i class="fa-solid fa-sun moon"></i>
                 </div>
-            
-                <!--
-                <div class="searchBox">
-                    <div class="searchToggle">
-                    <i class="fa-solid fa-x cancel"></i>
-                    <i class="fa-solid fa-magnifying-glass search"></i>
-                    </div>
-
-                    <div class="bar-menu">
-                        <input type="text" placeholder="Buscar...">
-                        <i class="fa-brands fa-searchengin"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="perfil">
-                <div class="file" onclick="perfilToggle();">
-                    <img src="Img/Anal.jpeg">
-                </div>
-                <div class="options">
-                    <h3>
-                        SUS
-                        <br>
-                        <span>
-                            izazagaariel@gmail.com
-                        </span>
-                    </h3>
-                    <ul>
-                        <li><i class="fa-solid fa-user"></i><a href="principal.php">MI PERFIL</a></li>
-                        <li><i class="fa-solid fa-pen-to-square"></i><a href="#">EDITAR PERFIL</a></li>
-                        <li><i class="fa-solid fa-inbox"></i><a href="#">BANDEJA DE ENTREGA</a></li>
-                        <li><i class="fa-solid fa-gear"></i><a href="#">AJUSTES</a></li>
-                        <li><i class="fa-solid fa-question"></i><a href="#">AYUDA</a></li>
-                        <li><i class="fa-solid fa-shuffle"></i></i><a href="#">CAMBIAR CUENTA</a></li>
-                        <li><i class="fa-solid fa-circle-xmark"></i><a href="php/cerrarS.php">CERRAR SESION</a></li>
-                    </ul>
-                    -->
 
                     <div class="btn-users">
                         <a href="inicio.html">
@@ -91,9 +39,14 @@
                                 INICIO
                             </button>
                         </a>
-                        <a href="index.html">
+                        <a href="servicios.html">
+                            <button class="btn-registrar">
+                                RESUMEN
+                            </button>
+                        </a>
+                        <a href="sabermas.html">
                             <button class="btn-iniciarS">
-                                SABER MAS
+                                SUB-TEMAS
                             </button>
                         </a>
                     </div>
@@ -102,7 +55,6 @@
             </div>
         </div>
     </nav>
-
 
     <!--SLIDER-->
     <div class="carrucel">
@@ -116,10 +68,6 @@
                     <div class="descric">"La creación de un presupuesto es fundamental para gestionar tus ingresos y
                         gastos. Implica registrar tus ingresos, clasificar tus gastos y establecer límites para
                         ahorrar y evitar deudas innecesarias."</div>
-                    <div class="btns-carrucel">
-                        <button>VER MAS</button>
-                        <button>COMPRAR AHORA</button>
-                    </div>
                 </div>
             </div>
             <div class="item">
@@ -131,12 +79,6 @@
                     <div class="descric">"Ahorrar es guardar una parte de tus ingresos para el futuro, mientras que
                         invertir implica usar esos ahorros para generar más dinero. Conocer la diferencia y cómo
                         funcionan ambos conceptos es clave para construir riqueza."</div>
-                    <div class="btns">
-                        <div class="btns-carrucel">
-                            <button>VER MAS</button>
-                            <button>COMPRAR AHORA</button>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="item">
@@ -148,10 +90,6 @@
                     <div class="descric">"Entender el uso responsable del crédito y cómo manejar la deuda es 
                         crucial. Esto incluye conocer las tasas de interés, los plazos de pago y las consecuencias 
                         de no cumplir con las obligaciones financieras."</div>
-                        <div class="btns-carrucel">
-                            <button>VER MAS</button>
-                            <button>COMPRAR AHORA</button>
-                        </div>
                 </div>
             </div>
             <div class="item">
@@ -163,10 +101,6 @@
                     <div class="descric">"La educación financiera también abarca la planificación a largo plazo, 
                         que incluye la jubilación, seguros y la creación de un fondo de emergencia. Tener un plan 
                         ayuda a enfrentar imprevistos y asegurar un futuro financiero estable."</div>
-                        <div class="btns-carrucel">
-                            <button>VER MAS</button>
-                            <button>COMPRAR AHORA</button>
-                        </div>
                 </div>
             </div>
         </div>
@@ -208,12 +142,12 @@
     </div>
 
     <!--PIE DE PAGINA-->
-    <footer class="pie-pagina">
+    <footer class="pie-pagina" id="mas">
         <div class="grupo1">
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="Img/logoEdu.webp" alt="ZAPATERIA CUATRO PATA">
+                        <img src="Img/logoEdu.webp" alt="ECONOMIA FACIL">
                     </a>
                 </figure>
             </div>
@@ -226,25 +160,6 @@
                     inversión y presupuestos para alcanzar la estabilidad económica."
                 </p>
             </div>
-            <div class="box">
-                <h2>
-                    SIGUENOS EN:
-                </h2>
-                <div class="red-social">
-                    <a href="#">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                </div>
-            </div>
         </div>
         <div class="grupo-2">
             <small>&copy; 2024 <b>EconomíaFácil</b> Todos los derechos recervados</small>
@@ -254,6 +169,5 @@
     <script src="js/BarMenu.js"></script>
     <script src="js/carrucel.js"></script>
     <script src="js/cierreFLS.js"></script>
-    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
 </body>
 </html>

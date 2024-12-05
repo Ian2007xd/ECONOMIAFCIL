@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECONOMIA FACIL</title>
+  <link rel="stylesheet" href="css/sabermas.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--MENU-->
+    <nav class="nav">
+        <div class="nav-bar">
+        <!--<i class="fa-solid fa-bars slideropen"></i>-->
+            <span class="logo">
+                <a href="#">
+                    EconomíaFácil
+                </a>
+            </span>
+        <div class="menu">
+            <div class="logo-toggle">
+            <span class="logo navLogo">
+                <a href="#">
+                    EconomíaFácil
+                </a>
+            </span>
+            <i class="fa-solid fa-x sliderclose"></i>
+            </div>
+            </div>
+        
+            <div class="darklight-searchBox">
+                <div class="darlight">
+                    <i class="fa-solid fa-moon sun"></i>
+                    <i class="fa-solid fa-sun moon"></i>
+                </div>
+
+                    <div class="btn-users">
+                        <a href="inicio.html">
+                            <button class="btn-registrar">
+                                INICIO
+                            </button>
+                        </a>
+                        <a href="servicios.html">
+                            <button class="btn-registrar">
+                                RESUMEN
+                            </button>
+                        </a>
+                        <a href="index.html">
+                            <button class="btn-iniciarS">
+                                PRINCIPAL
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  <h1>Botones con temas detallados</h1>
+
+  <div class="button-container">
+    <button class="styled-button" onclick="sendInfo('MF')">Mercados financieros</button>
+    <button class="styled-button" onclick="sendInfo('IF')">Instrumentos Financieros</button>
+    <button class="styled-button" onclick="sendInfo('GFC')">Gestión Financiera Corporativa</button>
+    <button class="styled-button" onclick="sendInfo('FP')">Finanzas Personales</button>
+    <button class="styled-button" onclick="sendInfo('TF')">Teoría Financiera</button>
+    <button class="styled-button" onclick="sendInfo('RyR')">Riesgo y Retorno</button>
+    <button class="styled-button" onclick="sendInfo('BySF')">Banca y Sistema Financiero</button>
+    <button class="styled-button" onclick="sendInfo('ECyFC')">Economía Conductual y Finanzas Conductuales</button>
+    <button class="styled-button" onclick="sendInfo('EI')">Estrategias de Inversión</button>
+    <button class="styled-button" onclick="sendInfo('EIyF')">Economía Internacional y Financiera</button>
+    <button class="styled-button" onclick="sendInfo('IyTF')">Innovación y Tecnología en Finanzas</button>
+    <button class="styled-button" onclick="sendInfo('ISyEF')">Impacto Social y Ético de las Finanzas</button>
+    <button class="styled-button" onclick="sendInfo('HEF')">Historia de la Economía Financiera</button>
+    <button class="styled-button" onclick="sendInfo('MF2')">Macroeconomía Financiera</button>
+    <button class="styled-button" onclick="sendInfo('FP2')">Finanzas Públicas</button>
+    <button class="styled-button" onclick="sendInfo('GPyD')">Gestión de Portafolios y Diversificación</button>
+    <button class="styled-button" onclick="sendInfo('EF')">Econometría Financiera</button>
+    <button class="styled-button" onclick="sendInfo('EFyAF')">Educación Financiera y Alfabetización Financiera</button>
+  </div>
+
+  <div id="info-output" class="info-output"></div>
+
+  <!--PIE DE PAGINA-->
+  <footer class="pie-pagina" id="mas">
+    <div class="grupo1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="Img/logoEdu.webp" alt="ECONOMIA FACIL">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>
+                SOBRE NOSOTROS:
+            </h2>
+            <p>
+                "Una página de educación financiera enseña a gestionar el dinero mediante consejos sobre ahorro, 
+                inversión y presupuestos para alcanzar la estabilidad económica."
+            </p>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2024 <b>EconomíaFácil</b> Todos los derechos recervados</small>
+    </div>
+</footer>
+  <script src="js/sabermas.js"></script>
+  <script src="js/BarMenu.js"></script>
+</body>
+</html>
